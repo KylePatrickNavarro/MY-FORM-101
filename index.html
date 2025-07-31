@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Layout Copy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .picture-box {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+    }
+
+    .picture-box img {
+      width: 250px;
+      height: 150px;
+    }
+
+    .form-left {
+      position: absolute;
+      top: 250px;
+      left: 300px;
+    }
+
+    .form-left label {
+      display: inline-block;
+      width: 100px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .form-left input[type="text"] {
+      width: 300px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 2px solid black; /* Bold border */
+    }
+
+    .text-block {
+      position: absolute;
+      top: 50px;
+      left: 600px;
+      width: 500px;
+    }
+
+    .form-right {
+      position: absolute;
+      top: 250px;
+      left: 800px;
+    }
+
+    .form-right label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .form-right input[type="radio"],
+    .form-right input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .contact-container {
+      position: absolute;
+      top: 420px;
+      left: 300px;
+    }
+
+    .contact-container label {
+      display: inline-block;
+      width: 140px;
+      font-weight: bold;
+    }
+
+    .short-input {
+      width: 260px;
+      padding: 5px;
+      border: 2px solid black; /* Bold border */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Picture -->
+    <div class="picture-box">
+      <img src="https://via.placeholder.com/250x150" alt="Exercise Image">
+    </div>
+
+    <!-- Name, Address, Email-Ad -->
+    <div class="form-left">
+      <label>Name:</label>
+      <input type="text"><br>
+
+      <label>Address:</label>
+      <input type="text"><br>
+
+      <label>Email-Ad:</label>
+      <input type="text"><br>
+    </div>
+
+    <!-- Contact Number -->
+    <div class="contact-container">
+      <label>Contact Number:</label>
+      <input type="text" class="short-input">
+    </div>
+
+    <!-- Paragraph -->
+    <div class="text-block">
+      Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Maecenas molestie tincidunt bibendum.<br> Praesent placerat tellus nisi, eu ornare eros ultrices<br> et. Nam suscipit non ipsum at semper. Vivamus
+    </div>
+
+    <!-- Gender and Hobbies -->
+    <div class="form-right">
+      <label>Gender:</label>
+      <input type="radio" name="gender"> Male<br>
+      <input type="radio" name="gender"> Female
+
+      <label>Hobbies:</label>
+      <input type="checkbox"> Swimming<br>
+      <input type="checkbox"> Biking<br>
+      <input type="checkbox"> Reading<br>
+      <input type="checkbox"> Watching TV<br>
+      <input type="checkbox"> Playing
+    </div>
+  </div>
+</body>
+</html>
